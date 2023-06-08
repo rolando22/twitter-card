@@ -1,16 +1,13 @@
+import { TwitterCard } from './TwitterCard';
+
+import './App.css';
+
 export function App() {
     return (
-        <article>
-            <section>
-                <img src='https://unavatar.io/midudev' alt='El avatar de midudev' />
-                <div>
-                    <strong>Miguél Ángel Durán</strong>
-                    <span>@midudev</span>
-                </div>
-            </section>
-            <aside>
-                <button>Seguir</button>
-            </aside>
-        </article>
+        <main className='App-container'>
+            <TwitterCard userName='midudev'>Miguél Ángel Durán</TwitterCard>
+            <TwitterCard userName='goncy'>goncy.tsx</TwitterCard>
+            <TwitterCard userName='platzi'>Platzi</TwitterCard>
+        </main>
     );
 }

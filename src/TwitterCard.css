@@ -1,0 +1,44 @@
+.TwitterCard-container {
+    width: 320px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 16px 12px;
+    justify-content: space-between;
+}
+
+.TwitterCard-user {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.TwitterCard-user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.TwitterCard-user-info {
+    display: grid;
+}
+
+.TwitterCard-user-nick {
+    opacity: 0.6;
+}
+
+.TwitterCard-button {
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.TwitterCard-container:hover {
+    background-color: rgba(32, 35, 39, 1);
+    transition: 0.3s ease background-color;
+}
