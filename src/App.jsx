@@ -2,12 +2,36 @@ import { TwitterCard } from './TwitterCard';
 
 import './App.css';
 
+const users = [
+    {
+        userName: 'midudev',
+        name: 'Miguél Ángel Durán',
+        isFollowing: true,
+    },
+    {
+        userName: 'platzi',
+        name: 'Platzi',
+        isFollowing: false,
+    },
+    {
+        userName: 'goncy',
+        name: 'goncy.tsx',
+        isFollowing: true,
+    },
+];
+
 export function App() {
     return (
         <main className='App-container'>
-            <TwitterCard userName='midudev'>Miguél Ángel Durán</TwitterCard>
-            <TwitterCard userName='goncy'>goncy.tsx</TwitterCard>
-            <TwitterCard userName='platzi'>Platzi</TwitterCard>
+            {users.map(user => 
+                <TwitterCard 
+                    key={user.userName} 
+                    userName={user.userName}
+                    initialIsFollowing={user.isFollowing}
+                >
+                    {user.name}
+                </TwitterCard>
+            )}
         </main>
     );
 }

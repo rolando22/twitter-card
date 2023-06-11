@@ -10,6 +10,11 @@
     justify-content: space-between;
 }
 
+.TwitterCard-container:hover {
+    background-color: rgba(32, 35, 39, 1);
+    transition: 0.3s ease background-color;
+}
+
 .TwitterCard-user {
     display: flex;
     align-items: center;
@@ -38,7 +43,32 @@
     cursor: pointer;
 }
 
-.TwitterCard-container:hover {
-    background-color: rgba(32, 35, 39, 1);
-    transition: 0.3s ease background-color;
+.TwitterCard-button:hover {
+    opacity: 0.9;
+}
+
+.TwitterCard-button.is-following {
+    width: 130px;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #2f2e2e;
+}
+
+.TwitterCard-button.is-following:hover {
+    opacity: 0.6;
+    background: rgba(252, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+}
+
+.TwitterCard-text-stopFollow {
+    display: none;
+}
+
+.TwitterCard-button.is-following:hover .TwitterCard-text-follow {
+    display: none;
+}
+
+.TwitterCard-button.is-following:hover .TwitterCard-text-stopFollow {
+    display: block;
 }
